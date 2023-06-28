@@ -3,6 +3,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        function5();
     }
 
     public static void function2 () {
@@ -21,24 +22,30 @@ public class Main {
         GeneralObject generalObject2 = new GeneralObject(40);
         CalculationUtil.calculate1(generalObject2);
         System.out.println(getResult(generalObject2));
+
     }
     
     public static void function3 () {
         College college = new College(100);
         List<Student> fillThisList = null;
         college.populateWithHigherThanNumber1(fillThisList, 60);
+        System.out.println(fillThisList);
+
     }
 
     public static void function4 () {
         College college = new College(100);
         List<Student> fillThisList = null;
         college.populateWithHigherThanNumber2(fillThisList, 60);
+        System.out.println(fillThisList);
     }
     
     public static void function5 () {
         College college = new College(100);
         List<Student> fillThisList = new ArrayList<>();
         college.populateWithHigherThanNumber1(fillThisList, 60);
+        System.out.println(fillThisList);
+
     }
 
     public static void function6 () {
